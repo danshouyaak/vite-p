@@ -1,0 +1,10 @@
+$color :#fcf;
+body{
+    background-color:$color;
+    //禁用文字的选中状态
+    user-select: none;
+}
+img{
+    //进制拖动图片
+    -webkit-user-drag:none ;
+}
