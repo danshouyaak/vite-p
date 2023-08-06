@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     styleImport({
       resolves:[
-        AntdResolve()
+//        AntdResolve()
       ],
     }),
   ],
