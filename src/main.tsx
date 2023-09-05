@@ -10,9 +10,9 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+//  <React.StrictMode>//严格模式
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+//  </React.StrictMode>
 )

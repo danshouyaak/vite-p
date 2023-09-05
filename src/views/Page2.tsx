@@ -1,7 +1,7 @@
 function View() {
     return (
         <div className="home">
-            <p>zhiehsipage2</p>
+            <p>这是page2</p>
         </div>
     )
 }

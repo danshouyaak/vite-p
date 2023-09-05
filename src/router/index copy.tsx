@@ -2,7 +2,7 @@
 
 import App from "../App";
 import Home from "../views/Home"
-import About from "../views/About"
+import About from "../views/Page301"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 //BrowserRouter决定路由模式
 
