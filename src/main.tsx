@@ -9,10 +9,16 @@ import "@/assets/styles/global.scss"
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 
+
+//状态管理
+import { Provider } from "react-redux"
+import store from '@/store'
 ReactDOM.createRoot(document.getElementById('root')!).render(
-//  <React.StrictMode>//严格模式
+  <Provider store={store}>
+    {/* //  <React.StrictMode>//严格模式 */}
     <BrowserRouter>
       <App />
     </BrowserRouter>
-//  </React.StrictMode>
+    {/* </React.StrictMode> */}
+  </Provider >
 )
