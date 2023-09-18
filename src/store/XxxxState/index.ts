@@ -1,17 +1,17 @@
+
 const store = {
     state: {
-        sarr: [10, 20, 39]
+        //放数据
     },
     action: {
-        sarrpush(newState: { sarr: number[] }, action: {
-            type: string,
-            val: number
-        }) {
-            newState.sarr.push(action.val)
-        }
+        //放方法
+        //名字统一管理
+        // sarrpush: "sarrpush"
+
     },
-    //名字统一管理
-    // sarrpush: "sarrpush"
+    asyncAction: {
+        //只放异步方法
+    },
     actionNames: {}
 }
 let actionNames = {}

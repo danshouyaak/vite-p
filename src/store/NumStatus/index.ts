@@ -1,10 +1,29 @@
 const store = {
     state: {
-        //放数据
+        num: 40
     },
-    actions: {
-        //放方法
+    actions: {//只放同步方法
+        add1(newState: { num: number }, action: { type: string }) {
+            //进行异步操作
+            newState.num++
+        },
+        add2(newState: { num: number }, action:
+            { type: string, val: number }) {
+            newState.num += action.val
+        },
+        add3(newState: { num: number }, action:
+            { type: string, val: number }) {
+            newState.num += action.val
+        },
+    },
 
+    //优化redux-thunk的异步写法（模仿Vuex的写法）
+    asyncAction: {//只放异步写法
+        anyncAdd1(dispatch: Function) {
+            setTimeout(() => {
+                dispatch({ type: "add1" })
+            }, 800)
+        }
     },
     //名字统一管理
     // add1: "add1",
